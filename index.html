@@ -7,6 +7,15 @@
 		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
 		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.my-countdown').countdown({
+				until: $.countdown.UTCDate()
+			});
+		})
+
+
+		</script>
 	</head>
 	<body>
 		
@@ -17,7 +26,7 @@
 				<h1>World Premiere<h1>
 			</div>
 			
-			<div class="my-countdown"></div>
+			<div style="font-size:40px;"class="my-countdown"></div>
 
 		</div>
 
